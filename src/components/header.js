@@ -55,16 +55,13 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1068); // Update the state based on screen width
+      setIsMobile(window.innerWidth <= 1068);
     };
 
-    // Initial check
     handleResize();
 
-    // Add event listener for resize
     window.addEventListener('resize', handleResize);
 
-    // Clean up the event listener
     return () => {
       window.removeEventListener('resize', handleResize);
     };

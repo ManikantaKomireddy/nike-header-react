@@ -218,7 +218,7 @@
 }
 
 .search-overlay + .container .menu-button {
-  display: none; /* Hide the menu button when search overlay is visible */
+  display: none; 
 }
 
 .search-overlay input {
