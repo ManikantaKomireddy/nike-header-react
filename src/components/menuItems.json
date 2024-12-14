@@ -1,0 +1,202 @@
+{
+    "New & Featured": {
+        "Featured": [
+            "New Arrivals",
+            "Bestsellers",
+            "SNKRS Launch Calendar",
+            "Member Exclusive",
+            "Customise with Nike By You",
+            "What's Trending"
+        ],
+        "Shop Icons": [
+            "Lifestyle",
+            "Air Force 1",
+            "Air Jordan 1",
+            "Air Max",
+            "Dunk",
+            "Cortez",
+            "Blazer",
+            "Pegasus",
+            "Vomero"
+        ],
+        "Shop By Sport": [
+            "Running",
+            "Basketball",
+            "Football",
+            "Golf",
+            "Tennis",
+            "Gym and Training",
+            "Yoga",
+            "Skateboarding"
+        ]
+    },
+
+    "Men":{
+        "Featured": [
+          "New Arrivals",
+          "Bestsellers",
+          "Shop All Sale"
+        ],
+        "Shoes": [
+          "All Shoes",
+          "Lifestyle",
+          "Jordan",
+          "Running",
+          "Football",
+          "Basketball",
+          "Gym and Training",
+          "Skateboarding",
+          "Sandals and Slides",
+          "Nike By You"
+        ],
+        "Clothing": [
+          "All Clothing",
+          "Tops and T-Shirts",
+          "Shorts",
+          "Pants and Leggings",
+          "Hoodies and Sweatshirts",
+          "Jackets and Gilets",
+          "Jerseys and Kits",
+          "Jordan"
+        ],
+        "Shop By Sport": [
+          "Running",
+          "Basketball",
+          "Football",
+          "Golf",
+          "Tennis",
+          "Gym and Training",
+          "Yoga",
+          "Skateboarding"
+        ],
+        "Accessories and Equipment": [
+          "All Accessories and Equipment",
+          "Bags and Backpacks",
+          "Socks",
+          "Hats and Headwear"
+        ]
+      },
+      "Women":{
+
+        "Featured": [
+          "New Arrivals",
+          "Bestsellers",
+          "Shop All Sale"
+        ],
+        "Shoes": [
+          "All Shoes",
+          "Lifestyle",
+          "Jordan",
+          "Running",
+          "Gym and Training",
+          "Football",
+          "Basketball",
+          "Sandals and Slides",
+          "Nike By You"
+        ],
+        "Clothing": [
+          "All Clothing",
+          "Performance Essentials",
+          "Tops and T-Shirts",
+          "Sports Bras",
+          "Pants and Leggings",
+          "Shorts",
+          "Hoodies and Sweatshirts",
+          "Jackets and Gilets",
+          "Skirts and Dresses",
+          "Modest Wear",
+          "Nike Maternity",
+          "Plus Size"
+        ],
+        "Shop By Sport": [
+          "Yoga",
+          "Running",
+          "Gym and Training",
+          "Basketball",
+          "Tennis",
+          "Golf",
+          "Football",
+          "Skateboarding"
+        ],
+        "Accessories and Equipment": [
+          "All Accessories and Equipment",
+          "Bags and Backpacks",
+          "Socks",
+          "Hats and Headwear"
+        ]
+      },
+    "Kids":{
+        "Featured": [
+          "New Arrivals",
+          "Bestsellers",
+          "Back to School",
+          "Sport Gear",
+          "Lifestyle Looks"
+        ],
+        "Shoes": [
+          "All Shoes",
+          "Lifestyle",
+          "Jordan",
+          "Football",
+          "Running",
+          "Basketball"
+        ],
+        "Clothing": [
+          "All Clothing",
+          "Tops and T-Shirts",
+          "Sport Bras",
+          "Hoodies and Sweatshirts",
+          "Pants and Leggings",
+          "Shorts"
+        ],
+        "Kids By Age": [
+          "Older Kids (7 - 14 years)",
+          "Younger Kids (4 - 7 years)",
+          "Babies & Toddlers (0 - 4 years)"
+        ],
+        "Shop By Sports": [
+          "Football",
+          "Running",
+          "Basketball",
+          "Gym and Training"
+        ],
+        "Accessories and Equipment": [
+          "All Accessories and Equipment",
+          "Bags and Backpacks",
+          "Socks",
+          "Hats and Headwear"
+        ]
+      },
+      "Sale":{
+        "Sale & Offers": [
+          "Shop All Sale",
+          "Bestsellers",
+          "Last Chance"
+        ],
+        "Men's Sale": [
+          "Shoes",
+          "Clothing",
+          "Accessories and Equipment"
+        ],
+        "Women's Sale": [
+          "Shoes",
+          "Clothing",
+          "Accessories and Equipment"
+        ],
+        "Kids' Sale": [
+          "Shoes",
+          "Clothing",
+          "Accessories and Equipment"
+        ],
+        "Shop By Sports": [
+          "Football",
+          "Running",
+          "Basketball",
+          "Gym and Training",
+          "Tennis"
+        ]
+      },
+      "SNKRS":{
+
+      }
+}

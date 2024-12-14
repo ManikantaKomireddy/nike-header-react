@@ -1,0 +1,511 @@
+.header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  width: 100%;
+  position: relative;
+}
+
+.logo-nike {
+  position: absolute;
+  left: 40px;
+}
+
+.logo-nike img {
+  height: 70px;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 16px;
+  margin: 0 auto;
+  left: 55%;
+  transform: translateX(25%);
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'YourFontFamily', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+.header {
+  transition: background-color 0.3s ease, max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.header.hovered {
+  padding-bottom: 300px;
+}
+
+.nav-button:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.expanded-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: white;
+  padding: 20px;
+  z-index: 2;
+  width: 100%;
+  max-width: 90%;
+}
+
+.nav-item:hover .expanded-header {
+  display: flex;
+}
+
+.dropdown-category {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.cat-btn {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 550;
+  white-space: nowrap;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.dropdown-item {
+  padding: 4px 0;
+  list-style: none;
+}
+
+.dropdown-link {
+  text-decoration: none;
+  color: grey;
+  white-space: nowrap;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Nike Futura', sans-serif;
+  margin: 2px;
+}
+
+.ul-dropdown {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-link:hover {
+  color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  width: auto;
+  margin-right: 25px;
+}
+
+.container .search,
+.container .heart,
+.container .cart {
+  display: flex;
+  align-items: center;
+}
+
+.container img {
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.container img:hover {
+  background-color: lightgrey;
+  outline: 10px solid lightgrey;
+  box-sizing: border-box;
+}
+
+.container span {
+  margin-right: 28px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.search {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  height: 30px;
+}
+
+.srch-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+}
+
+.srch-icon:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  outline: 5px solid lightgrey;
+  border-radius: 50%;
+}
+
+.search-span {
+  width: 100%;
+  padding: 0px 10px 5px 40px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-style: italic;
+  color: grey;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  display: flex;
+}
+
+.search-span:hover+.srch-icon {
+  background-color: white;
+  outline: 10px solid white;
+  border-radius: 50%;
+}
+
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid #f0f0f0;
+}
+
+.search-overlay + .container .menu-button {
+  display: none; /* Hide the menu button when search overlay is visible */
+}
+
+.search-overlay input {
+  width: 80%;
+  padding: 0px 10px 10px 10px;
+  font-size: 1.5em;
+}
+
+.search-overlay .popular-terms {
+  margin-top: 20px;
+}
+
+.search-overlay .popular-terms span {
+  margin: 5px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-button.close {
+  font-size: 30px;
+  color: black;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  background-color: lightgrey;
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.mobile-expanded-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.mobile-dropdown-category {
+  margin: 10px 0;
+}
+
+.mobile-cat-btn {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 550;
+  white-space: nowrap;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.mobile-ul-dropdown {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.mobile-dropdown-item {
+  padding: 4px 0;
+  list-style: none;
+}
+
+.mobile-dropdown-link {
+  text-decoration: none;
+  color: grey;
+  white-space: nowrap;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Nike Futura', sans-serif;
+  margin: 2px;
+}
+
+.mobile-dropdown-link:hover {
+  color: black;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 1068px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+  }
+
+  .logo-nike {
+    position: static;
+  }
+
+  .navbar-center {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-grow: 1;
+  }
+
+  .container .heart img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .container img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .srch-icon {
+    padding-left: 80%;
+  }
+
+  .search-span {
+    display: none;
+  }
+
+  .srch-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2000;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: whitesmoke;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mobile-menu.show {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-expanded-header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .mobile-dropdown-category {
+    margin: 10px 0;
+  }
+
+  .mobile-cat-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 550;
+    white-space: nowrap;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .mobile-ul-dropdown {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .mobile-dropdown-item {
+    padding: 4px 0;
+    list-style: none;
+  }
+
+  .mobile-dropdown-link {
+    text-decoration: none;
+    color: grey;
+    white-space: nowrap;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Nike Futura', sans-serif;
+    margin: 2px;
+  }
+
+  .mobile-dropdown-link:hover {
+    color: black;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 380px;
+    height: 55px;
+  }
+
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+
+  .container .cart {
+    display: flex; /* Ensure the cart icon is displayed */
+  }
+
+  .container img {
+    height: 30px; /* Keep the size adjustments */
+    width: 30px; /* Keep the size adjustments */
+  }
+
+  .srch-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-span {
+    display: none;
+  }
+
+  .container {
+    justify-content: space-between; /* Ensure spacing between items */
+    flex-grow: 1;
+    width:500px;
+  }
+}
+
+
+
+
+

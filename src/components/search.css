@@ -1,0 +1,148 @@
+.search-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 23vh;
+  font-family: Arial, sans-serif;
+  z-index: 1;
+  background-color: white;
+  padding: 0px 20px 20px 20px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  padding: 20px 0px 0px 0px;
+}
+.input-container {
+  position: relative;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.search-icon:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+  outline: 10px solid lightgrey;
+  border-radius: 50%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  margin-right: 800px;
+}
+
+.cancel-btn {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 250px;
+  font-weight: bold;
+}
+
+.popular-terms {
+  margin-top: 20px;
+}
+
+.popular-terms span {
+  display: inline-block;
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 1480px) {
+  .search-container {
+    width: 80%;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .cancel-btn {
+    margin-left: 150px;
+  }
+
+  input[type="text"] {
+    margin-right: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    width: 80%;
+    padding: 100px 0px 0px 0px;
+    flex-direction: row;
+  }
+
+
+  .input-container {
+    margin-right: 80px;
+    margin-bottom: 10px;
+  }
+
+  .cancel-btn {
+    margin-left: 0;
+  }
+
+  input[type="text"] {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-overlay {
+    height: auto;
+  }
+
+  .search-container {
+    width: 100%;
+    padding: 20px 30px 0px 0px;
+  }
+
+  .search-icon {
+    width: 16px;
+    height: 16px;
+    left: 8px;
+  }
+
+  input[type="text"] {
+    padding: 8px 8px 8px 25px;
+    font-size: 14px;
+  }
+
+  .cancel-btn {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .popular-terms span {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
